@@ -15,11 +15,11 @@ class Program
         int date = Convert.ToInt32(Console.ReadLine());
         Console.Write("Please enter the Year: ");
         int year = Convert.ToInt32(Console.ReadLine());
-        if (month <= 12) //Validate Months
+        if (month <= 12 && month >= 1) //Validate Months
         {
-            if (date <= 31)//Validate Date
+            if (date <= 31 && date >= 1)//Validate Date
             {
-                if (year <= 9999)//Validate Year
+                if (year <= 9999 && year >=1)//Validate Year
                 {
                     Console.WriteLine("\n");//Create Space
                     Console.WriteLine("Month          : " + month);
