@@ -3,8 +3,10 @@
 class Program
 {
     static void Main(string[] args)
-    {
+    {   
+
         Console.WriteLine("***Date Formatter***");
+        //Prompt the user to Enter the needed inputs;
         Console.WriteLine("Please enter the Month from 1 to 12: ");
         int month = Convert.ToInt32(Console.ReadLine());
         Console.WriteLine("Please enter the Date: ");
@@ -12,6 +14,7 @@ class Program
         Console.WriteLine("Please enter the Year: ");
         int year = Convert.ToInt32(Console.ReadLine());
 
+        //Switch Cases for each month
         switch (month)
         {
             case 1:
@@ -51,7 +54,7 @@ class Program
                 Console.WriteLine("December " + date + ", " + year);
                 break;
             default:
-                Console.WriteLine("Invalid Month Input");
+                Console.WriteLine("Invalid Month Input"); // Print out for the numbers that are not months
                 break;
         }
     }
